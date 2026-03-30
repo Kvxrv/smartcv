@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="dashboard-header">
+    <h1>Smart CV Dashboard</h1>
+    <p>Total Resumes: {{ results|length }}</p>
+    <a href="/logout" class="logout-btn">Logout</a>
+</div>
+
+<!-- TABLE SECTION -->
+<div class="dashboard-container">
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Resume</th>
+            <th>Score</th>
+            <th>Download</th>
+        </tr>
+
+        {% for rank, file, score in results %}
+        <tr>
+            <td>{{ rank }}</td>
+            <td>{{ file }}</td>
+            <td>{{ score }}</td>
+            <td>
+                <a class="download-btn" href="/download/{{ file }}">Download</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </table>
+</div>
+
+</body>
+</html>

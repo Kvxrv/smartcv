@@ -1,0 +1,138 @@
+/* ================= GLOBAL ================= */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ================= LOGIN PAGE ================= */
+
+/* Full screen background */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+/* Login card */
+.login-card {
+    background: #dcdcdc;
+    padding: 40px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* Inputs */
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+/* Button */
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    background: #357abd;
+}
+
+/* ================= DASHBOARD ================= */
+
+/* Header */
+.dashboard-header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    color: white;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.dashboard-header p {
+    margin: 5px;
+    font-size: 18px;
+}
+
+/* Logout button */
+.logout-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #ff4d6d;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background: #e63950;
+}
+
+/* Container */
+.dashboard-container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table header */
+th {
+    background: #4a90e2;
+    color: white;
+    font-size: 18px;
+}
+
+/* Table cells */
+td, th {
+    padding: 14px;
+    text-align: center;
+}
+
+/* Alternate rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Top candidate highlight */
+tr:nth-child(2) {
+    background-color: #d4edda !important;
+}
+
+/* Download button */
+.download-btn {
+    background: #28a745;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    background: #218838;
+}
